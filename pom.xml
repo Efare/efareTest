@@ -24,10 +24,9 @@
 				<configuration>
 					<argLine>-Xmx1024m</argLine>
 					<!-- Suite testng xml file to consider for test execution -->
-					<!--<suiteXmlFiles>
+					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
-						<!-- <suiteXmlFile>suites-test-testng.xml</suiteXmlFile> -->
-					</suiteXmlFiles>-->
+					</suiteXmlFiles>
 					<executions>
 						<execution>
 							<goals>
