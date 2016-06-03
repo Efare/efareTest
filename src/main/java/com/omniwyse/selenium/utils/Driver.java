@@ -32,8 +32,6 @@ public class Driver {
 
 		String remoteServerIP = null;
 		String remoteServerPort;
-		int driverTimeout = 10;
-
 		int height = Integer.parseInt(Config.getParameter("browser_window_height"));
 		int width = Integer.parseInt(Config.getParameter("browser_window_width"));
 		DesiredCapabilities capability = null;
@@ -72,7 +70,7 @@ public class Driver {
 		// Allow timeout to be set by a config parameter - used by Performance
 		// Team
 		System.out.println("Settibg driver timeout to 10 seconds");
-		driver.manage().timeouts().implicitlyWait(driverTimeout, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
 }
