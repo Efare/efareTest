@@ -71,7 +71,7 @@ public class Driver {
 
 		// Allow timeout to be set by a config parameter - used by Performance
 		// Team
-
+		System.out.println("Settibg driver timeout to 10 seconds");
 		driver.manage().timeouts().implicitlyWait(driverTimeout, TimeUnit.SECONDS);
 		return driver;
 	}
